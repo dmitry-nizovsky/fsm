@@ -1,0 +1,22 @@
+<div class="fsm">
+  <div class="fsm-content">
+    <h2>Products</h2>
+    <ul>
+      <li *ngFor="let product of products">
+        <span>{{product.name}}</span>&nbsp;
+        <button [disabled]="disable()" (click)="add(product)">add to cart</button>
+      </li>
+    </ul>
+  </div>
+  <div class="fsm-content">
+    <h2>Products in cart</h2>
+    <ul>
+      <li *ngFor="let item of items$ | async">
+        <span>{{item.name}}</span>&nbsp;
+        <button [disabled]="disable()" (click)="remove(item)">remove from cart</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<button (click)="buy()">buy now</button>

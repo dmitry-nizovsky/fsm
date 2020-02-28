@@ -1,0 +1,9 @@
+.fsm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  &-content {
+    width: 50%;
+  }
+}
