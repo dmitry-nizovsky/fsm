@@ -36,3 +36,5 @@ V {
   { type: T.TO_FAIL_PAYMENT,    from: V.PENDING_PAYMENT, to: V.FAIL_PAYMENT    },
 ];
 ```
+### plans
+- algebraic data types
